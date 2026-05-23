@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Postgraduate Courses (PG)</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <style>
+    body {
+      background-color: #f4f6f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .hero-section {
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+      ), url("PG.jpg") center/cover no-repeat;
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+      border-radius: 0 0 20px 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero-section h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .section-heading {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #007bff;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+
+    .content-box {
+      background-color:rgba(240, 236, 236, 0.95);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .table thead {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .table tbody tr:hover {
+      background-color: #e8f5e9;
+    }
+
+    .footer {
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    
+    <!-- Navbar -->
+    <?php require('header.php'); ?>
+
+    <div class="hero-section">
+      <h1>Postgraduate Courses (PG)</h1>
+    </div>
+
+    <div class="container content-box">
+      
+      <!-- Faculty of Arts -->
+      <div class="section-heading">Faculty of Arts</div>
+      <table class="table table-bordered table-hover text-center align-middle">
+        <thead>
+          <tr>
+            <th>Sr No.</th>
+            <th>Course</th>
+            <th>No. of Seats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Hindi</td><td>75</td></tr>
+          <tr><td>2</td><td>Pol. Science</td><td>75</td></tr>
+          <tr><td>3</td><td>Sanskrit</td><td>75</td></tr>
+          <tr><td>4</td><td>Geography</td><td>60</td></tr>
+          <tr><td>5</td><td>Psychology (S.F.S.)</td><td>60</td></tr>
+          <tr><td>6</td><td>Education (S.F.S.)</td><td>60</td></tr>
+          <tr><td>7</td><td>English (S.F.S.)</td><td>75</td></tr>
+          <tr><td>8</td><td>Sociology (S.F.S.)</td><td>75</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Faculty of Science -->
+      <div class="section-heading">Faculty of Science</div>
+      <table class="table table-bordered table-hover text-center align-middle">
+        <thead>
+          <tr>
+            <th>Sr No.</th>
+            <th>Course</th>
+            <th>No. of Seats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Physics</td><td>60</td></tr>
+          <tr><td>2</td><td>Botany</td><td>60</td></tr>
+          <tr><td>3</td><td>Chemistry</td><td>60</td></tr>
+          <tr><td>4</td><td>Mathematics</td><td>75</td></tr>
+          <tr><td>5</td><td>Zoology</td><td>120</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Faculty of Commerce -->
+      <div class="section-heading">Faculty of Commerce</div>
+      <table class="table table-bordered table-hover text-center align-middle">
+        <thead>
+          <tr>
+            <th>Sr No.</th>
+            <th>Course</th>
+            <th>No. of Seats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>M.Com.</td><td>80</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Faculty of Education -->
+      <div class="section-heading">Faculty of Education</div>
+      <table class="table table-bordered table-hover text-center align-middle">
+        <thead>
+          <tr>
+            <th>Sr No.</th>
+            <th>Course</th>
+            <th>No. of Seats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>B.Ed.</td><td>50</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <?php require('footer.php'); ?>
+    </div>
+  </div>
+
+</body>
+</html>

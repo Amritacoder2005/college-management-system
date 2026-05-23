@@ -1,0 +1,15 @@
+<?php
+
+$conn= mysqli_connect("localhost","root","","college");
+$a= $_POST['Name'];
+$b= $_POST['Email'];
+$c= $_POST['Password'];
+$ins="INSERT INTO `signup`(`Name`, `Email`, `Password`) VALUES ('$a','$b','$c')";
+if(mysqli_query($conn,$ins))
+{
+    echo"<script>alert('SUCESSFULLY SIGN UP.....'); window.location.href='login.php';</script>";
+}
+else{
+    echo"data not inserted";
+}
+?>
